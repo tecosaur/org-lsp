@@ -1,0 +1,11 @@
+[package]
+name = "org-lsp"
+version = "0.1.0"
+authors = ["TEC <tec@tecosaur.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+emacs = "^0.14"
+tower-lsp = "^0.13"

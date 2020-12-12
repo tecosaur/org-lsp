@@ -1,0 +1,16 @@
+#+title: Org-LSP
+#+author: tecosaur
+
+*Allow the unwashed masses to use Org, without using Emacs, using Emacs.*
+
+-----
+
+* Tasks
++ [ ] Set up basic dynamic module, load into Emacs
++ [ ] Set up basic LSP functionality
++ [ ] Provide =org-mode= functionality
++ [ ] Install Emacs (if necessary) prompt
++ [ ] Embed portable ~emacs~ into LSP server
+
+* Dependencies
++ clang
