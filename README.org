@@ -5,6 +5,11 @@
 
 -----
 
+This is a nascent idea. If you have thoughts, please share them 🙂.
+
+* Model
+[[file:model.png]]
+
 * Tasks
 + [ ] Set up basic dynamic module, load into Emacs
 + [ ] Set up basic LSP functionality
