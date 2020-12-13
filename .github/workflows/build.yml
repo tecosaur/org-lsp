@@ -1,29 +1,25 @@
 name: "Check"
-on:
-  pull_request:
-    branches: master
-  push:
-    branches: master
+on: [push, pull_request]
 
-job:
+jobs:
   check:
+    name: Check
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v2
+      - name: Checkout source
+        uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: sudo apt-get install clang
+      - name: Install dependencies
+        run: sudo apt-get install clang
 
-    - name: Install Stable rust toolchain
-      uses: actions-rs/toolchain@v1
-      with:
-        profile: minimal
-        toolchain: stable
-        override: true
+      - name: Install stable rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
 
-    - name: Run cargo check
-      uses: actions-rs/cargo@v1
-      with:
-        command: check
+      - name: Run cargo check
+        uses: actions-rs/cargo@v1
+        with:
+          command: check
