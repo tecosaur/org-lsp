@@ -8,4 +8,14 @@ edition = "2018"
 
 [dependencies]
 emacs = "^0.14"
+tokio = { version = "0.2", features = ["full"] }
 tower-lsp = "^0.13"
+
+[[bin]]
+name = "orgserver"
+path = "src/server/main.rs"
+
+[lib]
+name = "module"
+path = "src/module/lib.rs"
+crate-type = ["cdylib"]
